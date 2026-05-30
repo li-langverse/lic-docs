@@ -1,0 +1,11 @@
+.venv-docs/
+site/
+__pycache__/
+*.pyc
+
+# Lean 4 (docs/semantics)
+docs/semantics/.lake/
+docs/demo/media/native-verticals/png/
+docs/demo/media/studio-verticals-demo.mp4
+docs/demo/media/*.mp4
+docs/demo/media/ffmpeg-*.txt
