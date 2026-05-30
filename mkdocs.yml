@@ -2,7 +2,7 @@
 
 site_name: Li
 site_description: Prove it. Write it easily. Run it fast.
-site_url: https://li-langverse.github.io/lic-docs/
+site_url: https://docs.lilangverse.xyz/
 repo_url: https://github.com/li-langverse/lic-docs
 repo_name: li-langverse/lic-docs
 edit_uri: edit/main/docs/
@@ -160,3 +160,4 @@ nav:
           - Phase 4 — Runtime: superpowers/plans/2026-05-14-phase-04-runtime-stdlib.md
           - Phase 5 — Tetris: superpowers/plans/2026-05-14-phase-05-tetris.md
           - Phase 6 — Self-host: superpowers/plans/2026-05-14-phase-06-self-host.md
+

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # Build the MkDocs site to ./site (used locally and in CI).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -12,4 +12,5 @@ source "$VENV/bin/activate"
 pip install -q -r "${ROOT}/docs/requirements.txt"
 
 mkdocs build -f "${ROOT}/mkdocs.yml" -d "${ROOT}/site" "$@"
+echo "docs.lilangverse.xyz" > "${ROOT}/site/CNAME"
 echo "docs: wrote ${ROOT}/site"
