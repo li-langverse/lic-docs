@@ -1,4 +1,4 @@
-# lic-docs
+﻿# lic-docs
 
 Published documentation for the [Li](https://github.com/li-langverse/lic) language (`lic` compiler, handbook, plans, verification notes).
 
@@ -6,7 +6,7 @@ Published documentation for the [Li](https://github.com/li-langverse/lic) langua
 |---|---|
 | **Live site** | [li-langverse.github.io/lic-docs](https://li-langverse.github.io/lic-docs/) |
 | **Compiler repo** | [li-langverse/lic](https://github.com/li-langverse/lic) |
-| **Custom domain** (optional) | `docs.yourdomain.com` — set in repo **Settings → Pages** and add a CNAME in DNS |
+| **Custom domain** (optional) | `docs.yourdomain.com` â€” set in repo **Settings â†’ Pages** and add a CNAME in DNS |
 
 ## Build locally
 
@@ -36,4 +36,4 @@ The `lic` repo keeps a copy of `docs/` for compiler CI gates (Lean semantics, pl
 
 ## License
 
-Same as Li: MIT OR Apache-2.0.
+Same as Li: MIT OR GPL-3.0-or-later.
