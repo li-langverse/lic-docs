@@ -36,4 +36,4 @@ The `lic` repo keeps a copy of `docs/` for compiler CI gates (Lean semantics, pl
 
 ## License
 
-Same as Li: MIT OR Apache-2.0.
+Same as Li: GPL-3.0-or-later OR GPL-3.0-or-later.
