@@ -31,9 +31,8 @@ theme:
     repo: fontawesome/brands/gitlab
   features:
     - navigation.instant
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - navigation.top
     - navigation.footer
     - search.suggest
