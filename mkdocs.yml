@@ -1,32 +1,34 @@
 ﻿# Li documentation site — https://li-langverse.github.io/lic-docs/
 
 site_name: Li
-site_description: Prove it. Write it easily. Run it fast.
+site_description: A language that checks before it runs
 site_url: https://docs.lilangverse.xyz/
-repo_url: https://github.com/li-langverse/lic-docs
+repo_url: https://gitlab.lilangverse.xyz/li-langverse/lic-docs
 repo_name: li-langverse/lic-docs
-edit_uri: edit/main/docs/
+edit_uri: "-/edit/main/docs/"
 
 theme:
   name: material
   logo: assets/li-mark.svg
   favicon: assets/li-mark.svg
   palette:
-    - scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/brightness-4
-        name: Light mode
     - scheme: default
       primary: custom
       accent: custom
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
   font:
-    text: Space Grotesk
-    code: JetBrains Mono
+    text: Source Serif 4
+    code: IBM Plex Mono
+  icon:
+    repo: fontawesome/brands/gitlab
   features:
     - navigation.instant
     - navigation.tabs
@@ -70,6 +72,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/fonts.css
@@ -77,10 +82,10 @@ extra_css:
 
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/li-langverse/lic-docs
-    - icon: fontawesome/brands/github
-      link: https://github.com/li-langverse/lic
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.lilangverse.xyz/li-langverse/lic-docs
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.lilangverse.xyz/li-langverse/lic
 
 nav:
   - Home: index.md
@@ -95,7 +100,7 @@ nav:
       - Package layout: guide/package-layout-reference.md
   - Ecosystem:
       - Overview: ecosystem/overview.md
-      - Canonical docs (roadmap repo): https://github.com/li-langverse/roadmap/tree/main/docs/ecosystem
+      - Canonical docs (roadmap repo): https://gitlab.lilangverse.xyz/li-langverse/roadmap/-/tree/main/docs/ecosystem
       - Agent-kit adoption: ecosystem/ADOPTION.md
       - Governance: ecosystem/governance.md
       - Strict by default: ecosystem/strict-by-default.md

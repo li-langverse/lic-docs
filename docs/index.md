@@ -1,9 +1,9 @@
 <div class="li-hero" markdown="1">
 
 <div class="li-hero__glyph">理</div>
-<p class="li-hero__tagline">Li · prove · write · run fast</p>
+<p class="li-hero__tagline">理 · reason</p>
 
-Li is a language for **programs you can trust in production**: contracts checked before ship, memory and parallelism ruled out as failure modes, and native speed when the proof closes.
+Li is a compiled language for science and simulation. You write ordinary code, then you write what has to stay true. If that doesn’t hold, Li will not give you a program.
 
 </div>
 
