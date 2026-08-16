@@ -107,6 +107,18 @@
   border-right: 1px solid var(--li-rule);
 }
 
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--li-paper);
+    color: var(--li-ink);
+  }
+
+  .md-nav--primary .md-nav__source {
+    background-color: var(--li-sheet);
+    color: var(--li-ink);
+  }
+}
+
 .md-nav__title,
 .md-nav__item--section > .md-nav__link[for] {
   font-family: "Cormorant Garamond", serif;
