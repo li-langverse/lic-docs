@@ -47,7 +47,10 @@
 }
 
 .md-header {
-  background: var(--li-paper);
+  background-color: var(--li-paper);
+  background-image: url("../assets/paper.jpg");
+  background-size: 520px;
+  background-blend-mode: multiply;
   color: var(--li-ink);
   border-bottom: 1px solid var(--li-rule);
   box-shadow: none;
@@ -103,6 +106,12 @@
   padding-bottom: 2rem;
 }
 
+.md-sidebar,
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  background: transparent;
+}
+
 .md-sidebar--primary {
   border-right: 1px solid var(--li-rule);
 }
@@ -110,11 +119,17 @@
 @media screen and (max-width: 76.1875em) {
   .md-nav--primary .md-nav__title {
     background-color: var(--li-paper);
+    background-image: url("../assets/paper.jpg");
+    background-size: 520px;
+    background-blend-mode: multiply;
     color: var(--li-ink);
   }
 
   .md-nav--primary .md-nav__source {
     background-color: var(--li-sheet);
+    background-image: url("../assets/paper.jpg");
+    background-size: 520px;
+    background-blend-mode: multiply;
     color: var(--li-ink);
   }
 }
@@ -137,8 +152,13 @@
   background: transparent;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   background-color: var(--md-default-bg-color);
+  overflow-x: clip;
 }
 
 [data-md-color-scheme="default"] body::before {
@@ -147,8 +167,24 @@ body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: url("../assets/paper.jpg") center / 520px repeat;
-  opacity: 0.45;
+  background:
+    radial-gradient(ellipse 80% 46% at 6% 0%, color-mix(in srgb, var(--li-cinnabar) 7%, transparent), transparent 58%),
+    url("../assets/paper.jpg") center / 480px repeat;
+  opacity: 0.66;
+  mix-blend-mode: multiply;
+}
+
+[data-md-color-scheme="default"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 55% at 100% 110%, color-mix(in srgb, var(--li-ink) 12%, transparent), transparent 58%),
+    radial-gradient(ellipse 40% 30% at 0% 100%, color-mix(in srgb, var(--li-cinnabar) 5%, transparent), transparent 60%),
+    url("../assets/paper.jpg") 40px 20px / 220px repeat;
+  opacity: 0.22;
   mix-blend-mode: multiply;
 }
 
@@ -160,10 +196,40 @@ body {
   z-index: 1;
 }
 
+[data-md-color-scheme="default"] .md-container,
+[data-md-color-scheme="default"] .md-main,
+[data-md-color-scheme="default"] .md-main__inner,
+[data-md-color-scheme="default"] .md-content,
+[data-md-color-scheme="default"] .md-content__inner,
+[data-md-color-scheme="default"] .md-sidebar,
+[data-md-color-scheme="default"] .md-sidebar__scrollwrap,
+[data-md-color-scheme="default"] .md-nav {
+  background-color: transparent;
+}
+
+[data-md-color-scheme="default"] html,
+[data-md-color-scheme="default"] body,
+[data-md-color-scheme="default"] .md-container {
+  background-color: var(--li-paper);
+  background-image:
+    radial-gradient(ellipse 80% 46% at 6% 0%, color-mix(in srgb, var(--li-cinnabar) 7%, transparent), transparent 58%),
+    url("../assets/paper.jpg");
+  background-size: auto, 480px;
+  background-blend-mode: normal, multiply;
+}
+
+.md-content,
+.md-content__inner,
+.md-typeset {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .md-typeset {
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--li-ink);
+  overflow-wrap: break-word;
 }
 
 .md-typeset h1,
@@ -196,12 +262,35 @@ body {
 
 /* Hero */
 .li-hero {
-  margin: 0 0 2rem;
+  position: relative;
+  margin: 0 0 1.25rem;
   padding: 2rem 2rem 1.75rem;
   border: 1px solid var(--li-ink);
   border-radius: 0;
-  background: var(--li-sheet);
+  background-color: var(--li-sheet);
+  background-image: url("../assets/paper.jpg");
+  background-size: 420px;
+  background-blend-mode: multiply;
   box-shadow: none;
+  overflow: hidden;
+}
+
+.li-hero::before {
+  content: "";
+  position: absolute;
+  left: -8%;
+  bottom: -28%;
+  width: min(46%, 280px);
+  aspect-ratio: 1;
+  background: url("../assets/sketches/ink-blot.jpg") center / contain no-repeat;
+  opacity: 0.22;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.li-hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .li-hero__glyph {
@@ -225,7 +314,9 @@ body {
 .li-hero p {
   font-size: 1.05rem;
   line-height: 1.7;
-  max-width: 42rem;
+  max-width: min(42rem, 100%);
+  box-sizing: border-box;
+  padding-right: 0.35rem;
   color: var(--li-ink-soft);
 }
 
@@ -332,13 +423,19 @@ body {
 }
 
 .md-footer {
-  background: var(--li-paper);
+  background-color: var(--li-paper);
+  background-image: url("../assets/paper.jpg");
+  background-size: 520px;
+  background-blend-mode: multiply;
   border-top: 1px solid var(--li-rule);
   color: var(--li-muted);
 }
 
 .md-footer-meta {
-  background: var(--li-paper-deep);
+  background-color: var(--li-paper-deep);
+  background-image: url("../assets/paper.jpg");
+  background-size: 520px;
+  background-blend-mode: multiply;
 }
 
 .md-copyright,
@@ -372,4 +469,150 @@ body {
 
 .md-source {
   color: inherit;
+}
+
+/* Notebook plates — ink sketches on the page */
+.li-lab {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.15rem 0.35rem;
+  align-items: end;
+  margin: 0.15rem 0 1.75rem;
+  padding: 1.15rem 0 0.2rem;
+  min-height: 168px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.li-lab__cap {
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--li-cinnabar);
+  font-weight: 600;
+}
+
+.li-lab .li-plate,
+.li-lab .li-plate img {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.li-lab .li-plate {
+  margin: 0;
+}
+
+.li-lab .li-plate:nth-child(2) { width: 88%; transform: rotate(-2deg); }
+.li-lab .li-plate:nth-child(3) { width: 96%; margin-bottom: 0.35rem; transform: rotate(1.5deg); }
+.li-lab .li-plate:nth-child(4) { width: 92%; transform: rotate(-1deg); }
+.li-lab .li-plate:nth-child(5) { width: 100%; }
+.li-lab .li-plate:nth-child(6) { width: 90%; transform: rotate(1deg); }
+.li-lab .li-plate:nth-child(7) { width: 96%; margin-bottom: 0.45rem; transform: rotate(-1.5deg); }
+
+.li-lab .li-plate img {
+  opacity: 0.92;
+}
+
+.li-lab--page {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-height: 110px;
+  margin: 2.4rem 0 0.4rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--li-rule);
+}
+
+.li-plate {
+  margin: 0;
+}
+
+.li-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.md-content {
+  position: relative;
+}
+
+.li-margin-folio {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.li-margin-folio .li-plate {
+  position: absolute;
+  opacity: 0.28;
+}
+
+.li-margin-folio .li-plate--tr {
+  top: 2.4rem;
+  right: 0;
+  width: min(22vw, 220px);
+}
+
+.li-margin-folio .li-plate--bl {
+  bottom: 3rem;
+  left: 0;
+  width: min(20vw, 190px);
+}
+
+.li-margin-folio .li-plate--br {
+  bottom: 8rem;
+  right: 4%;
+  width: min(16vw, 150px);
+  opacity: 0.18;
+}
+
+[data-md-color-scheme="slate"] .li-lab .li-plate img,
+[data-md-color-scheme="slate"] .li-margin-folio .li-plate img,
+[data-md-color-scheme="slate"] .li-hero::before {
+  mix-blend-mode: screen;
+  opacity: 0.28;
+  filter: invert(1) sepia(0.2) hue-rotate(340deg);
+}
+
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ol > li,
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .highlight,
+[data-md-color-scheme="default"] .md-typeset table:not([class]),
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details {
+  background-color: var(--li-sheet);
+  background-image: url("../assets/paper.jpg");
+  background-size: 420px;
+  background-blend-mode: multiply;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .li-lab {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-height: 0;
+  }
+
+  .li-margin-folio {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 44em) {
+  .li-hero {
+    padding: 1.25rem 1rem 1.15rem;
+  }
+
+  .li-lab {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .li-lab .li-plate:nth-child(n + 6) {
+    display: none;
+  }
 }

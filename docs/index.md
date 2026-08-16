@@ -7,6 +7,16 @@ Li is a compiled language for science and simulation. You write ordinary code, t
 
 </div>
 
+<div class="li-lab" aria-hidden="true">
+  <p class="li-lab__cap">Notebook</p>
+  <figure class="li-plate"><img src="assets/sketches/pendulum.jpg" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/cogs.jpg" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/truss.jpg" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/ast.jpg" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/oscilloscope.jpg" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/turing.jpg" alt=""></figure>
+</div>
+
 <div class="grid cards" markdown>
 
 -   :material-hand-wave:{ .lg .middle } **New here?**

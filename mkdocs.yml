@@ -79,6 +79,9 @@ extra_css:
   - stylesheets/fonts.css
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/folio.js
+
 extra:
   social:
     - icon: fontawesome/brands/gitlab
