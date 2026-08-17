@@ -53,7 +53,7 @@
       '<figure class="li-plate"><img src="' +
       base +
       name +
-      '.jpg" alt=""></figure>'
+      '.png" alt=""></figure>'
     );
   }
 
@@ -97,11 +97,11 @@
       '<figure class="li-plate li-plate--tr"><img src="' +
       base +
       picks[0] +
-      '.jpg" alt=""></figure>' +
+      '.png" alt=""></figure>' +
       '<figure class="li-plate li-plate--bl"><img src="' +
       base +
       picks[picks.length - 1] +
-      '.jpg" alt=""></figure>';
+      '.png" alt=""></figure>';
     content.prepend(folio);
   }
 

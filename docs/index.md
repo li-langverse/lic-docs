@@ -9,12 +9,12 @@ Li is a compiled language for science and simulation. You write ordinary code, t
 
 <div class="li-lab" aria-hidden="true">
   <p class="li-lab__cap">Notebook</p>
-  <figure class="li-plate"><img src="assets/sketches/pendulum.jpg" alt=""></figure>
-  <figure class="li-plate"><img src="assets/sketches/cogs.jpg" alt=""></figure>
-  <figure class="li-plate"><img src="assets/sketches/truss.jpg" alt=""></figure>
-  <figure class="li-plate"><img src="assets/sketches/ast.jpg" alt=""></figure>
-  <figure class="li-plate"><img src="assets/sketches/oscilloscope.jpg" alt=""></figure>
-  <figure class="li-plate"><img src="assets/sketches/turing.jpg" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/pendulum.png" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/cogs.png" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/truss.png" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/ast.png" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/oscilloscope.png" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/turing.png" alt=""></figure>
 </div>
 
 <div class="grid cards" markdown>
