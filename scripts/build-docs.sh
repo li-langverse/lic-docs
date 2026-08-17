@@ -13,4 +13,5 @@ pip install -q -r "${ROOT}/docs/requirements.txt"
 
 mkdocs build -f "${ROOT}/mkdocs.yml" -d "${ROOT}/site" "$@"
 echo "docs.lilangverse.xyz" > "${ROOT}/site/CNAME"
+python3 "${ROOT}/scripts/export-agent-docs.py"
 echo "docs: wrote ${ROOT}/site"

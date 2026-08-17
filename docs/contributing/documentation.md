@@ -13,6 +13,8 @@ Assume the reader:
 
 Define terms on first use. Link to the design spec instead of copying ten-page tables.
 
+Agents and chats should ingest [For agents](../for-agents.md) — `llms.txt` and `raw/*.md` — not the styled HTML. When you add a nav page that agents should know, add a blurb in `scripts/export-agent-docs.py`.
+
 ## Voice and tone
 
 **Do:**

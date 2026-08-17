@@ -43,6 +43,12 @@ Li is a compiled language for science and simulation. You write ordinary code, t
 
     [All tests](testing/overview.md) and [Security audits](testing/security.md).
 
+-   :material-robot-outline:{ .lg .middle } **Agents and chats**
+
+    ---
+
+    Fetch [llms.txt](https://docs.lilangverse.xyz/llms.txt), not the HTML. [How to ingest this handbook](for-agents.md).
+
 </div>
 
 ## Three promises
@@ -80,6 +86,7 @@ def main() -> int
 | [Provability gaps](verification/provability-gaps.md) | What is **not** proved/wired yet (honest status) |
 | [Ecosystem](ecosystem/overview.md) | Packages, `lip`, governance (`li-langverse`) |
 | [Creating packages](guide/creating-packages.md) | `li-new-package` scaffold |
+| [For agents](for-agents.md) | `llms.txt`, raw Markdown, handover |
 | [Reference spec](superpowers/specs/2026-05-14-li-language-design.md) | Normative design (technical) |
 
 ## Project status

@@ -7,6 +7,7 @@ on:
       - "docs/**"
       - "mkdocs.yml"
       - "scripts/build-docs.sh"
+      - "scripts/export-agent-docs.py"
       - ".github/workflows/docs.yml"
   workflow_dispatch:
 

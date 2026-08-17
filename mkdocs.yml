@@ -92,6 +92,7 @@ extra:
 nav:
   - Home: index.md
   - Getting started: getting-started.md
+  - For agents: for-agents.md
   - Guide:
       - Hello world: guide/hello-world.md
       - Install tools: guide/getting-started-tools.md

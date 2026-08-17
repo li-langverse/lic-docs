@@ -4,8 +4,9 @@ Published documentation for the [Li](https://github.com/li-langverse/lic) langua
 
 | | |
 |---|---|
-| **Live site** | [li-langverse.github.io/lic-docs](https://li-langverse.github.io/lic-docs/) |
-| **Compiler repo** | [li-langverse/lic](https://github.com/li-langverse/lic) |
+| **Live site** | [docs.lilangverse.xyz](https://docs.lilangverse.xyz/) |
+| **For agents** | [llms.txt](https://docs.lilangverse.xyz/llms.txt) · [llms-full.txt](https://docs.lilangverse.xyz/llms-full.txt) · [raw Markdown](https://docs.lilangverse.xyz/raw/for-agents.md) |
+| **Compiler repo** | [li-langverse/lic](https://gitlab.lilangverse.xyz/li-langverse/lic) |
 | **Custom domain** (optional) | `docs.yourdomain.com` — set in repo **Settings → Pages** and add a CNAME in DNS |
 
 ## Build locally
@@ -31,7 +32,8 @@ The `lic` repo keeps a copy of `docs/` for compiler CI gates (Lean semantics, pl
 |------|---------|
 | `docs/` | MkDocs source (handbook, guides, specs, release notes) |
 | `mkdocs.yml` | Site navigation and theme |
-| `scripts/build-docs.sh` | Local / CI build to `./site` |
+| `scripts/build-docs.sh` | Local / CI build to `./site` (also writes `llms.txt` and `raw/`) |
+| `scripts/export-agent-docs.py` | Agent index + raw Markdown export |
 | `.github/workflows/docs.yml` | Deploy GitHub Pages on `main` |
 
 ## License
