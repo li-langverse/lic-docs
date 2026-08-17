@@ -1,9 +1,9 @@
 /* Li paper — docs, aligned with the landing page */
 
 :root {
-  --li-paper: #f3ead8;
-  --li-paper-deep: #e7d7b8;
-  --li-sheet: #f7f0e2;
+  --li-paper: #f5efe4;
+  --li-paper-deep: #ebe4d4;
+  --li-sheet: #faf6ed;
   --li-ink: #1a1612;
   --li-ink-soft: #3d352c;
   --li-muted: #6b6156;
@@ -47,10 +47,7 @@
 }
 
 .md-header {
-  background-color: var(--li-paper);
-  background-image: url("../assets/paper.jpg");
-  background-size: 520px;
-  background-blend-mode: multiply;
+  background-color: color-mix(in srgb, var(--li-paper) 88%, transparent);
   color: var(--li-ink);
   border-bottom: 1px solid var(--li-rule);
   box-shadow: none;
@@ -119,17 +116,11 @@
 @media screen and (max-width: 76.1875em) {
   .md-nav--primary .md-nav__title {
     background-color: var(--li-paper);
-    background-image: url("../assets/paper.jpg");
-    background-size: 520px;
-    background-blend-mode: multiply;
     color: var(--li-ink);
   }
 
   .md-nav--primary .md-nav__source {
     background-color: var(--li-sheet);
-    background-image: url("../assets/paper.jpg");
-    background-size: 520px;
-    background-blend-mode: multiply;
     color: var(--li-ink);
   }
 }
@@ -168,9 +159,9 @@ body {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 80% 46% at 6% 0%, color-mix(in srgb, var(--li-cinnabar) 7%, transparent), transparent 58%),
-    url("../assets/paper.jpg") center / 480px repeat;
-  opacity: 0.66;
+    radial-gradient(ellipse 80% 46% at 6% 0%, color-mix(in srgb, var(--li-cinnabar) 3.5%, transparent), transparent 58%),
+    url("../assets/paper.jpg") center / 860px repeat;
+  opacity: 0.28;
   mix-blend-mode: multiply;
 }
 
@@ -181,10 +172,9 @@ body {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 55% at 100% 110%, color-mix(in srgb, var(--li-ink) 12%, transparent), transparent 58%),
-    radial-gradient(ellipse 40% 30% at 0% 100%, color-mix(in srgb, var(--li-cinnabar) 5%, transparent), transparent 60%),
-    url("../assets/paper.jpg") 40px 20px / 220px repeat;
-  opacity: 0.22;
+    radial-gradient(ellipse 70% 55% at 100% 110%, color-mix(in srgb, var(--li-ink) 5%, transparent), transparent 60%),
+    radial-gradient(ellipse 40% 30% at 0% 100%, color-mix(in srgb, var(--li-cinnabar) 2%, transparent), transparent 62%);
+  opacity: 0.4;
   mix-blend-mode: multiply;
 }
 
@@ -211,11 +201,7 @@ body {
 [data-md-color-scheme="default"] body,
 [data-md-color-scheme="default"] .md-container {
   background-color: var(--li-paper);
-  background-image:
-    radial-gradient(ellipse 80% 46% at 6% 0%, color-mix(in srgb, var(--li-cinnabar) 7%, transparent), transparent 58%),
-    url("../assets/paper.jpg");
-  background-size: auto, 480px;
-  background-blend-mode: normal, multiply;
+  background-image: none;
 }
 
 .md-content,
@@ -269,7 +255,7 @@ body {
   border-radius: 0;
   background-color: var(--li-sheet);
   background-image: url("../assets/paper.jpg");
-  background-size: 420px;
+  background-size: 780px;
   background-blend-mode: multiply;
   box-shadow: none;
   overflow: hidden;
@@ -423,19 +409,13 @@ body {
 }
 
 .md-footer {
-  background-color: var(--li-paper);
-  background-image: url("../assets/paper.jpg");
-  background-size: 520px;
-  background-blend-mode: multiply;
+  background-color: color-mix(in srgb, var(--li-paper) 90%, transparent);
   border-top: 1px solid var(--li-rule);
   color: var(--li-muted);
 }
 
 .md-footer-meta {
   background-color: var(--li-paper-deep);
-  background-image: url("../assets/paper.jpg");
-  background-size: 520px;
-  background-blend-mode: multiply;
 }
 
 .md-copyright,
@@ -588,8 +568,8 @@ body {
 [data-md-color-scheme="default"] .md-typeset details {
   background-color: var(--li-sheet);
   background-image: url("../assets/paper.jpg");
-  background-size: 420px;
-  background-blend-mode: multiply;
+  background-size: 780px;
+  background-blend-mode: soft-light;
 }
 
 @media screen and (max-width: 76.1875em) {
