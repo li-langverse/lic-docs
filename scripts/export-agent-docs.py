@@ -135,6 +135,7 @@ SECTIONS: list[tuple[str, list[str]]] = [
 
 
 def first_heading(text: str) -> str:
+    text = text.lstrip("\ufeff")
     for line in text.splitlines():
         s = line.strip()
         if s.startswith("# "):
