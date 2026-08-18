@@ -15,6 +15,7 @@ Li is a compiled language for science and simulation. You write ordinary code, t
   <figure class="li-plate"><img src="assets/sketches/ast.png" alt=""></figure>
   <figure class="li-plate"><img src="assets/sketches/oscilloscope.png" alt=""></figure>
   <figure class="li-plate"><img src="assets/sketches/turing.png" alt=""></figure>
+  <figure class="li-plate"><img src="assets/sketches/flasks.png" alt=""></figure>
 </div>
 
 <div class="grid cards" markdown>
